@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::match(['get', 'post'], '/users', function () {
+Route::get('users', function () {
     return 'h3lloWorld!';
-});
+})->name('users');
+
